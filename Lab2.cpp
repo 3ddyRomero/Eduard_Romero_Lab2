@@ -9,7 +9,7 @@ using std::string;
 using std::endl;
 
 int menu(){
-	int x1,x2,x3,x4,y1,y2,y3,y4;
+	int a,b,aexponente,bexponente,resultadoa,resultadob,x1,x2,x3,x4,y1,y2,y3,y4;
     int opcion = 0;
     do{
         cout<<"     MENU"<<endl
@@ -39,6 +39,15 @@ int menu(){
 		cin >> x2;
 		cout<<"Ingrese Y 2"<<endl;
 		cin >> y2;
+		
+		a=x2-x1;
+		b=y2-y1;
+
+		aexponente = pow(a,2);
+		bexponente = pow(b,2);
+
+		resultadoa = sqrt(aexponente+bexponente);
+		cout<<"d = " << resultadoa<<endl;
 		
 
 	    }
