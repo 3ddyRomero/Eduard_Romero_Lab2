@@ -10,7 +10,7 @@ using std::string;
 using std::endl;
 
 int Eldos(){
-	int a,b,a2,b2,a2exponente,b2exponente,aexponente,bexponente,resultadoa,resultadob,x1,x2,x3,x4,y1,y2,y3,y4;
+	int a,b,a2,b2,c,d,cexponente,dexponente,result,a2exponente,b2exponente,aexponente,bexponente,resultadoa,resultadob,x1,x2,x3,x4,y1,y2,y3,y4;
 		cout<<"Ingrese X 1"<<endl;
                 cin >> x1;
                 cout<<"Ingrese Y 1"<<endl;
@@ -31,12 +31,16 @@ int Eldos(){
 
                 cout<<"Ingrese X 3"<<endl;
                 x3= rand()%51;
-                cout<<"Ingrese Y 3"<<endl;
+                
+		cout<<"Ingrese Y 3"<<endl;
                 y3= rand()%51;
+		
                 cout<<"Ingrese X 4"<<endl;
                 x4= rand()%51;
+		
                 cout<<"Ingrese Y 4"<<endl;
-                y4= rand()%51;
+                y4 = rand()%51;
+		
 
                 a2 = x4-x3;
 	      	b2 = y4-y3;
@@ -46,7 +50,17 @@ int Eldos(){
 		
 		resultadob = sqrt(a2exponente+b2exponente);
 		cout<<"r =  "<<resultadob<<endl;
-			
+		
+		c = x4-x1;
+		d = y4-y1;
+
+		cexponente = pow(c,2);
+		dexponente = pow(d,2);
+
+		result = sqrt(cexponente+dexponente);
+		cout<<"d = "<<result <<endl;
+
+
 
 }
 int menu(){
