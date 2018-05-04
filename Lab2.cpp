@@ -8,8 +8,42 @@ using std::cin;
 using std::string;
 using std::endl;
 
+int Eldos(){
+	int a,b,a2,b2,aexponente,bexponente,resultadoa,resultadob,x1,x2,x3,x4,y1,y2,y3,y4;
+		cout<<"Ingrese X 1"<<endl;
+                cin >> x1;
+                cout<<"Ingrese Y 1"<<endl;
+                cin >> y1;
+                cout<<"Ingrese X 2"<<endl;
+                cin >> x2;
+                cout<<"Ingrese Y 2"<<endl;
+                cin >> y2;
+
+                a=x2-x1;
+                b=y2-y1;
+
+                aexponente = pow(a,2);
+                bexponente = pow(b,2);
+
+                resultadoa = sqrt(aexponente+bexponente);
+                cout<<"d = " << resultadoa<<endl;
+
+                cout<<"Ingrese X 3"<<endl;
+                cin >> x3;
+                cout<<"Ingrese Y 3"<<endl;
+                cin >> y3;
+                cout<<"Ingrese X 4"<<endl;
+                cin >> x4;
+                cout<<"Ingrese Y 4"<<endl;
+                cin >> y4;
+
+                a2 = x4-x3;
+	      	b2 = y4-y3;
+
+
+}
 int menu(){
-	int a,b,aexponente,bexponente,resultadoa,resultadob,x1,x2,x3,x4,y1,y2,y3,y4;
+	
     int opcion = 0;
     do{
         cout<<"     MENU"<<endl
@@ -31,24 +65,8 @@ int menu(){
 	    }
 
 	    if(opcion == 2){
-	    	cout<<"Ingrese X 1"<<endl;
-		cin >> x1;
-		cout<<"Ingrese Y 1"<<endl;
-		cin >> y1;
-		cout<<"Ingrese X 2"<<endl;
-		cin >> x2;
-		cout<<"Ingrese Y 2"<<endl;
-		cin >> y2;
-		
-		a=x2-x1;
-		b=y2-y1;
+	    	
 
-		aexponente = pow(a,2);
-		bexponente = pow(b,2);
-
-		resultadoa = sqrt(aexponente+bexponente);
-		cout<<"d = " << resultadoa<<endl;
-		
 
 	    }
 
@@ -60,6 +78,7 @@ int menu(){
         }while (opcion == 0);
         return opcion;
 }
+
 
 int main()
 {
