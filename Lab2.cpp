@@ -10,7 +10,7 @@ using std::string;
 using std::endl;
 
 int Eldos(){
-	int a,b,a2,b2,c,d,cexponente,dexponente,result,a2exponente,b2exponente,aexponente,bexponente,resultadoa,resultadob,x1,x2,x3,x4,y1,y2,y3,y4;
+	int a,b,a2,b2,c,d,suma,cexponente,dexponente,result,a2exponente,b2exponente,aexponente,bexponente,resultadoa,resultadob,x1,x2,x3,x4,y1,y2,y3,y4;
 		cout<<"Ingrese X 1"<<endl;
                 cin >> x1;
                 cout<<"Ingrese Y 1"<<endl;
@@ -59,7 +59,14 @@ int Eldos(){
 
 		result = sqrt(cexponente+dexponente);
 		cout<<"d = "<<result <<endl;
+		
+		suma = resultadoa + resultadob;
 
+		if(suma>result){
+		cout<<"Si se corta"<<endl;
+		}else{
+		cout<<"No Se corta"<<endl;
+		}
 
 
 }
