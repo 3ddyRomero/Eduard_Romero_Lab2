@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <math.h>
-
+#include <ctype.h>
 
 using std::cout;
 using std::cin;
@@ -9,6 +9,7 @@ using std::string;
 using std::endl;
 
 int menu(){
+	int x1,x2,x3,x4,y1,y2,y3,y4;
     int opcion = 0;
     do{
         cout<<"     MENU"<<endl
@@ -30,7 +31,14 @@ int menu(){
 	    }break;
 
 	    if(opcion == 2){
-	    	
+	    	cout<<"Ingrese X 1"<<endl;
+		cin >> x1;
+		cout<<"Ingrese Y 1"<<endl;
+		cin >> Y1
+		cout<<"Ingrese X 2"<<endl;
+		cin >> x2;
+		cout<<"Ingrese Y 2"<<endl;
+		cin >> y2;
 		
 
 	    }break;
