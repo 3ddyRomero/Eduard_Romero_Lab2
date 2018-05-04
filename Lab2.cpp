@@ -28,24 +28,24 @@ int menu(){
 	    if(opcion == 1){
 	    
 	    
-	    }break;
+	    }
 
 	    if(opcion == 2){
 	    	cout<<"Ingrese X 1"<<endl;
 		cin >> x1;
 		cout<<"Ingrese Y 1"<<endl;
-		cin >> Y1
+		cin >> y1;
 		cout<<"Ingrese X 2"<<endl;
 		cin >> x2;
 		cout<<"Ingrese Y 2"<<endl;
 		cin >> y2;
 		
 
-	    }break;
+	    }
 
 	    if(opcion == 3){
 
-	    }break;
+	    }
 
 
         }while (opcion == 0);
